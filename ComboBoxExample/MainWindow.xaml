@@ -7,6 +7,28 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="350" Width="525">
     <Grid>
-        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="20"></RowDefinition>            
+            <RowDefinition Height="100*"></RowDefinition>
+            <RowDefinition Height="100"></RowDefinition>
+        </Grid.RowDefinitions>
+        <TextBlock Grid.Row="0">콤보박스 테스트</TextBlock>
+        <StackPanel Grid.Row="1">
+            <ComboBox>
+                <StackPanel Orientation="Horizontal">
+                    <Image Source="F:\### 22.사진 ###\지훈이돌\김지훈 돌 (42).jpg" Width="100"></Image>
+                    <TextBlock TextWrapping="Wrap" Tag="지훈이42" MaxWidth="200">콤보박스 테스트입니다. 리스트에서 보여집니다. </TextBlock>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Image Source="F:\### 22.사진 ###\지훈이돌\김지훈 돌 (70).jpg" Width="100"></Image>
+                    <TextBlock TextWrapping="Wrap" Tag="지훈이70" MaxWidth="200">콤보박스 테스트입니다. 리스트에서 보여집니다.</TextBlock>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Image Source="F:\### 22.사진 ###\지훈이돌\김지훈 돌 (120).jpg" Width="100"></Image>
+                    <TextBlock TextWrapping="Wrap" Tag="지훈이120" MaxWidth="200">콤보박스 테스트입니다. 리스트에서 보여집니다.</TextBlock>
+                </StackPanel>                
+            </ComboBox>
+
+        </StackPanel>
     </Grid>
 </Window>
